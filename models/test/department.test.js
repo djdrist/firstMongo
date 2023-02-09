@@ -1,5 +1,4 @@
 const Department = require('../department.model.js');
-const mongoose = require('mongoose');
 const expect = require('chai').expect;
 
 describe('Department', () => {
@@ -42,9 +41,5 @@ describe('Department', () => {
 				expect(err).to.not.exist;
 			});
 		}
-	});
-
-	after(() => {
-		mongoose.models = {};
 	});
 });

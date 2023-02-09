@@ -1,5 +1,4 @@
 const Employee = require('../employee.model.js');
-const mongoose = require('mongoose');
 const expect = require('chai').expect;
 
 describe('Employee', () => {
@@ -62,9 +61,5 @@ describe('Employee', () => {
 		dep.validate((err) => {
 			expect(err).to.not.exist;
 		});
-	});
-
-	after(() => {
-		mongoose.models = {};
 	});
 });
